@@ -1,0 +1,126 @@
+:root {
+  --primary-color: #6c63ff;
+  --sidebar-bg: #0d1117; /* Dark blue/black */
+  --bg-color: #f9f9f9;
+  --text-dark: #2c3e50;
+  --text-light: #7f8c8d;
+  --accent: #00b894;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.resume {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.sidebar {
+  background-color: var(--sidebar-bg);
+  color: white;
+  padding: 30px;
+  width: 300px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.sidebar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid white;
+}
+
+.sidebar h1 {
+  margin: 10px 0 5px;
+  font-size: 24px;
+}
+
+.sidebar p {
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+.sidebar .section {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.sidebar .section h2 {
+  font-size: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 14px;
+}
+
+.sidebar ul li {
+  margin-bottom: 9px;
+}
+
+.main {
+  padding: 40px;
+  flex: 1;
+}
+
+.main .section {
+  margin-bottom: 30px;
+}
+
+.main h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 5px;
+}
+
+.job, .education-item {
+  margin-bottom: 20px;
+}
+
+.job .title, .education-item .title {
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.job ul, .education-item ul {
+  margin-top: 5px;
+  padding-left: 20px;
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .resume {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+}
