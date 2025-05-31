@@ -1,10 +1,10 @@
 :root {
-  --primary-color: #6c63ff;
-  --sidebar-bg: #0d1117; /* Dark blue/black */
+  --primary-color: #281ee8;
+  --sidebar-bg: #022e70; /* Dark blue/black */
   --bg-color: #f9f9f9;
   --text-dark: #2c3e50;
   --text-light: #7f8c8d;
-  --accent: #00b894;
+  --accent: #075545;
 }
 
 body {
@@ -41,8 +41,8 @@ body {
 }
 
 .sidebar img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
@@ -55,12 +55,12 @@ body {
 }
 
 .sidebar p {
-  font-size: 14px;
+  font-size: 16px;
   margin: 2px 0;
 }
 
 .sidebar .section {
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: left;
 }
 
@@ -110,10 +110,10 @@ body {
 }
 
 .job ul, .education-item ul {
-  margin-top: 5px;
+  margin-top: 10px;
   padding-left: 20px;
   font-size: 14px;
-  color: var(--text-light);
+  color: var(--text-dark);
 }
 
 @media (max-width: 768px) {
