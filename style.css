@@ -2,32 +2,30 @@ body {
   background-color: #f0f0f0;
   margin: 0;
   font-family: Arial, sans-serif;
-  height: 100%; /* Ensure the body takes up full height */
+  min-height: 100vh;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: flex-start; /* Align content at the top (keep top-aligned) */
-  flex-direction: column; /* Stack .page containers vertically */
-  padding: 20px; /* Optional: padding for better spacing around the content */
+  justify-content: center;
+  align-items: center;
 }
 
 .resume {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 0;
+  width: 100%;
 }
 
 .page {
   width: 900px;
   background-color: #ffffff;
-  margin: 30px 0;
+  margin: 40px 0;
   padding: 40px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   box-sizing: border-box;
   display: flex;
   gap: 40px;
-  justify-content: space-between; /* Keep space between sidebar and main */
-  flex-wrap: nowrap; /* Don't allow wrapping */
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 .sidebar {
@@ -39,16 +37,16 @@ body {
 }
 
 .sidebar img {
-  width: 100px; /* Adjust size as needed */
+  width: 100px;
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
-  margin: 0 auto; /* Center the image */
+  margin: 0 auto;
 }
 
 .main {
-  width: 60%;  /* Adjust width to make room for the sidebar */
+  width: 60%;
   color: #333;
 }
 
